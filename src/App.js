@@ -20,7 +20,7 @@ function App() {
     <div className='container'>
       <h1>Feedback App</h1>
       <FeedbackForm onFeedbackAdded={loadFeedback}/>
-      <FeedbackList feedbacks={feedbacks}/>
+      <FeedbackList feedbacks={feedbacks} onFeedbackDeleted={loadFeedback}/>
     </div>
   );
 }
