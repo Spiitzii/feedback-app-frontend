@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='container'>
       <h1>Feedback App</h1>
-      <FeedbackForm />
+      <FeedbackForm onFeedbackAdded={loadFeedback}/>
       <FeedbackList feedbacks={feedbacks}/>
     </div>
   );
